@@ -26,10 +26,10 @@ body{
 }
 
 #cpsButton{
-    width: 600px;
-    height: 400px;
+    width: 700px;
+    height: 450px;
     font-size: 65px;
-    background-color: #4CAF50; /* Green */
+    background-color: #4caf50; /* green */
     border: 5px;
     color: rgb(255, 255, 255);
     text-align: center;
@@ -47,7 +47,7 @@ body{
     
     }
 
-    #scoreDiv{
+    #scoreDiV{
         font-size: 40px;
         background-color: #af4c4c;
         display: inline-block;

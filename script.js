@@ -1,7 +1,7 @@
 var timeDiv = document.getElementById("timerDiv");
 var clicksDiv = document.getElementById("cpsDiv");
 var clicksDiv = document.getElementById("scoreDiv");
-
+setInterval(increaseTime,10)
 
 var gameOver;
 
@@ -31,7 +31,7 @@ function reset(){
     //start game
     started = true;
     gameOver = false;
-    setInterval(increaseTime,10)
+    
     //update to show val
     timeDiv.innerHTML = time;
     cpsDiv.innerHTML = cps;
