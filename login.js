@@ -12,7 +12,7 @@ function login(){
 
     if (user.value in dict){
         if(dict[user.value] == password.value){
-            window.location.replace("http://bettercps.com");
+            window.location.replace("http://bettercps.com/cpstest.html");
         }
     }
 
