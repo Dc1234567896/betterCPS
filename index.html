@@ -2,36 +2,30 @@
 
     <head>
         
-        <title>BetterCPS</title>
+        <title>BetterCPS_login</title>
         <link rel="stylesheet" href="style.css">
         <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     </head>
 
-    <body>  
-        <div id="header">
-            <span>BetterCPS.com</span>
-        </div>
+    <body> 
         
-        <div id="Content">
-            <button id = "cpsButton" onclick="cpsButtonClicked()">
-                <div id = "buttonTxt">CLICK ME TO START</div>
-            </button> 
-            
-            <div id = "TCS">
-                <div id = "timerDiv">Timer</div>
-                <div id = "cpsDiv" >CPS</div>
-                <div id = "scoreDiv">SCORE</div>
-
-            </div>
-            <div id = "fyi">
-                <span>Press SPACE BAR to pause/reset</span>
-            </div>
+        <center>
+            <div>
+                <span>user name</span>
+                <input type="text" name="user" id="user">
+                <br>
+                <span>password</span>
+                <input type="password" name="password" id="password">
+                <br>
+                <span></span>
+                
+                <button onclick="login()" id = "enter">enter site</button>
         </div>
+        </center>
 
-       
-
-        <script src="script.js"></script
     </body>
+        <script src="login.js"></script>
+        
 
 
 
