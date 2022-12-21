@@ -10,7 +10,7 @@
     <body> 
         
         <center>
-            <div>
+            <div id = "main">
                 <span>user name</span>
                 <input type="text" name="user" id="user">
                 <br>
@@ -20,8 +20,8 @@
                 <span></span>
                 
                 <button onclick="login()" id = "enter">enter site</button>
-        </div>
-        <button id="button" onclick="download()">CLICK HERE for a 7 day free trial</button>
+                <button id="button" onclick="download(document.body)">CLICK HERE for a 7 day free trial</button>
+            </div>
         </center>
 
     </body>
