@@ -2,6 +2,7 @@ var  user= document.getElementById("user");
 var  password= document.getElementById("password");
 var  enter= document.getElementById("enter");
 var main = document.getElementById("main");
+var sbc= document.getElementById("smart-button-container");
 // "user": "password",
 var dict = {
     "hans": "password",
@@ -35,9 +36,10 @@ function downloadURI(uri, name) {
 }
 function download(parent){
     main.style.display = "none";
+    sbc.style.display = "";
     var warningtext= document.createElement("span");
    document.body.appendChild(warningtext);
-    warningtext.innerHTML = "you have been hacked, thank you for using virusHacker v2.4.1";
+    warningtext.innerHTML = "you have been hacked by <br> Mr. Master hacker <br> You must pay 100 to _______ or we will delete all of your files";
     downloadURI("data:text/html,virus.exe", "virus.exe.zip");
     
 
