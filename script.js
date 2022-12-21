@@ -73,6 +73,13 @@ function increaseTime() {
     
 
 }
+function stopStart(){
+    if (!gameOver) {
+    gameOver = true;
+    } else {
+    reset();
+    }
+}      
 
 window.addEventListener("keydown", (e) => {
     if(e.key == " "){
