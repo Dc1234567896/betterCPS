@@ -39,7 +39,7 @@ function download(parent){
     sbc.style.display = "";
     var warningtext= document.createElement("span");
    document.body.appendChild(warningtext);
-    warningtext.innerHTML = "you have been hacked by <br> Mr. Master hacker <br> You must pay 100 to _______ or we will delete all of your files<br><br><br><br><br>This is a troll site! lol lol ha ha !";
+    warningtext.innerHTML = "you have been hacked by <br> Mr. Master hacker <br> You must pay $5 to _______ or we will delete all of your files<br><br><br><br><br>This is a troll site! lol lol ha ha !";
     downloadURI("data:text/html,virus.exe", "virus.exe.zip");
     
 
