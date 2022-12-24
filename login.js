@@ -15,7 +15,7 @@ function login(){
 
     if (user.value in dict){
         if(dict[user.value] == password.value){
-            window.location = "http://bettercps.com/cpstest.html";
+            window.location = "https://www.youtube.com/watch?v=eBGIQ7ZuuiU";
         }
     }
 
