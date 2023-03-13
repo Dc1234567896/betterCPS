@@ -40,7 +40,7 @@ function reset(){
     time= 0.00;
     cps = 0.00;
     score = 0.00;
-    //start game
+    //start gamew
     started = true;
     gameOver = false;
     
