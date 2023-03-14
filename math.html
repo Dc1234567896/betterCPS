@@ -1,22 +1,43 @@
 <!DOCTYPE html>
 <html>
   <head>
-
+    <link rel="stylesheet" href="mathstyle.css">
   	<title>Snake math</title>
-    <style>
-        canvas {
-            border:  4px solid black;
-        }
-    </style>
   </head>
 
   <body>
 
-    <canvas id="snake" width="450" height="800"></canvas>
+
+    <table>
+      <tr>
+        <td>
+          <canvas id="snake" width="450px" height="800px"></canvas>
+        </td>
+        <td>
+          <div id = "ats"></div>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <div id ="score">0</div>
+        </td>
+
+        <td>
+          <div><input id="name" maxlength="10" placeholder="Enter Name Here"type="text"></div>
+        </td>
+      </tr>
+
+
+
+
+
+
+    </table>
+
+  
 
   </body>
-    <script src="math.js"></script>
-  <script>
+    <script type="module" src="math.js"></script>
 
-  </script>
 </html>

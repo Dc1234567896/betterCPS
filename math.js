@@ -1,11 +1,12 @@
+import {addData, getData}  from './firebase.mjs';
 window.addEventListener("keydown", movePlayer, false);
 
 
 
 
 const canvas = document.getElementById("snake");
-
-
+const scoretxt = document.getElementById("score");
+const name = document.getElementById("name");
 
 let playerWidth = 50;
 let playerHight = 50;
@@ -20,6 +21,7 @@ let enemyX = canvas.width/2 - enemyWidth/2;
 let enemyY = 700;
 let enemySpeed = 8.5;
 
+let score = 0;
 
 
 
@@ -72,6 +74,8 @@ function moveEnemy(){
     if(enemyY < - enemyHight){
         enemyX = Math.floor(Math.random()*canvas.width)
         enemyY = 800
+        score++;
+        scoretxt.innerHTML = score;
     }
 }
 
@@ -82,11 +86,9 @@ function mathLoop() {
         playerSpeed = 0
         enemySpeed = 0
         setTimeout(() => {
+
             resetMath();
-
         }, 1000);
-        
-
 
     }
     redraw();
@@ -106,6 +108,13 @@ function resetMath() {
     enemyX = canvas.width/2 - enemyWidth/2;
     enemyY = 700;
     enemySpeed = 10;
+   
+    score = 0
+    scoretxt.innerHTML = score;
+    addData(name.value,score);
+    
+
+
 
 }
 
@@ -133,12 +142,12 @@ function redraw() {
         //draw char box
         
         
-        ctx.fillStyle = "rgb(000, 0, 200)";
+        ctx.fillStyle = "rgb(000, 255, 255)";
         ctx.fillRect(playerX, playerY, 50, 50);
 
         //draw enemy box
 
-        ctx.fillStyle = "rgb(000, 200, 0)";
+        ctx.fillStyle = "rgb(000, 240, 0)";
         ctx.fillRect(enemyX, enemyY, enemyWidth, enemyHight);
     }
 
