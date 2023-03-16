@@ -1,5 +1,6 @@
 import {initializeApp} from "https://www.gstatic.com/firebasejs/9.4.0/firebase-app.js"
-import { getFirestone, query, addDoc, orderBy, limit, getDocs, collection} from "https://www.gstatic.com/firebasejs/9.4.0/firebase-firestore.js"
+import { getAnalytics} from "https://www.gstatic.com/firebasejs/9.4.0/firebase-analytics.js"
+import { getFirestore, query, addDoc, orderBy, limit, getDocs, collection} from "https://www.gstatic.com/firebasejs/9.4.0/firebase-firestore.js"
 
 const firebaseConfig = {
     apiKey: "AIzaSyDXqIH6NMNvkSAaKUMer-T9JOUJnVircfY",
@@ -12,6 +13,7 @@ const firebaseConfig = {
   };
 
 const app = initializeApp(firebaseConfig);
+const firestoreDatabase = getFirestore(app);
 const analytics = getAnalytics(app);
 
 const firebaseCollection = "scores";

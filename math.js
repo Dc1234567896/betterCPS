@@ -1,4 +1,5 @@
 import {addData, getData}  from './firebase.mjs';
+
 window.addEventListener("keydown", movePlayer, false);
 
 
@@ -111,13 +112,12 @@ function resetMath() {
    
     score = 0
     scoretxt.innerHTML = score;
-    addData(name.value,score);
-    
-
-
 
 }
 
+function post() { 
+    addData(name.value,score);
+}
 
 
 function hit(){
