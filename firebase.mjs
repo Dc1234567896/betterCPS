@@ -28,6 +28,7 @@ export function addData(name, score) {
 export async function getData(dataLimit) {
     const scoresRef = collection(firestoreDatabase, "scores");
     const q = query(scoresRef, orderBy("score", "desc"), limit(dataLimit));
+    //console.log(await getDocs(q)[0])
     return await getDocs(q);
 }
  
